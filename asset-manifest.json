@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/PIMR/static/css/main.74fd02aa.css",
-    "main.js": "/PIMR/static/js/main.6edd625f.js",
+    "main.js": "/PIMR/static/js/main.078234b3.js",
     "static/media/pdf.worker.min.js": "/PIMR/static/media/pdf.worker.min.516d516be39f2972077a.js",
     "static/media/ByteBeatJan2024.pdf": "/PIMR/static/media/ByteBeatJan2024.799372ad5f53564cba20.pdf",
     "static/media/Untitled.jpg": "/PIMR/static/media/Untitled.1e3eae20735fc777ce2a.jpg",
     "index.html": "/PIMR/index.html",
     "main.74fd02aa.css.map": "/PIMR/static/css/main.74fd02aa.css.map",
-    "main.6edd625f.js.map": "/PIMR/static/js/main.6edd625f.js.map"
+    "main.078234b3.js.map": "/PIMR/static/js/main.078234b3.js.map"
   },
   "entrypoints": [
     "static/css/main.74fd02aa.css",
-    "static/js/main.6edd625f.js"
+    "static/js/main.078234b3.js"
   ]
 }
