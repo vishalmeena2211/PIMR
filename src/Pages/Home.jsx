@@ -14,6 +14,7 @@ const Home = () => {
         <Route path='/' element={<FlipBook/>}/>
         <Route path='/contact' element={<ContactUs/>}/>
         <Route path='/about-me' element={<AboutMe/>}/>
+        <Route path='*' element={<FlipBook/>}/>
       </Routes>
 
       

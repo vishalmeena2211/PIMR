@@ -76,7 +76,7 @@ const RightSidebar = () => {
     <>
 
       
-      <button className="fixed z-50 top-10 right-10 flex flex-col items-end justify-start text-3xl rounded-md p-1 bg-gray-700 text-white" onClick={toggleMobileMenu} >
+      <button className="fixed z-50 top-10 right-10 flex flex-col items-end justify-start text-3xl rounded-full p-3 bg-white text-black" onClick={toggleMobileMenu} >
         {isMobileMenuOpen ? <RxCross2 /> : <IoIosMenu />}
       </button>
       <MobileMenu isOpen={isMobileMenuOpen} onClose={closeMobileMenu} isActive={isActive}/>
