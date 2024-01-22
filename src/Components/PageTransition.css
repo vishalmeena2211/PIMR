@@ -1,0 +1,36 @@
+/* PageTransition.css */
+
+@keyframes revealFadeInUp {
+    from {
+      opacity: 1;
+      clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
+    }
+    to {
+      opacity: 1;
+      clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+  }
+  
+  .page-enter {
+    opacity: 1;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
+  }
+  
+  .page-enter-active {
+    opacity: 1;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    transition: opacity 500ms ease-out, clip-path 500ms cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    animation: revealFadeInUp 500ms ease-out;
+  }
+  
+  .page-exit {
+    opacity: 1;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+  
+  .page-exit-active {
+    opacity: 1;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
+    transition: opacity 300ms ease-in, clip-path 300ms ease-in;
+  }
+  

@@ -1,0 +1,121 @@
+/* Overlay.css */
+
+.overlay-enter {
+    opacity: 0;
+    transform: translateY(-100px); /* Start from a slightly above position */
+  }
+  
+  .overlay-enter-active {
+    opacity: 1;
+    transform: translateY(0); /* Move to the original position */
+    transition: opacity 300ms ease-out, transform 300ms ease-out;
+  }
+  
+  .overlay-exit {
+    opacity: 1;
+    transform: translateY(0); /* Start from the original position */
+  }
+  
+  .overlay-exit-active {
+    opacity: 0;
+    transform: translateY(-100px); /* Move slightly above to disappear */
+    transition: opacity 300ms ease-out, transform 300ms ease-out;
+  }
+  
+  .overlay-left-enter{
+    transform-origin: left;
+    animation: fadeInAndTranslateLeft 0.3s ease-out; /* Add fadeInAndTranslateLeft animation */
+  }
+  
+  .overlay-right-enter {
+    transform-origin: right;
+    animation: fadeInAndTranslateRight 0.3s ease-out ; /* Add fadeInAndTranslateRight animation */
+  }
+  
+  .overlay-up-enter {
+    transform-origin: top;
+    animation: fadeInAndTranslateUp 0.3s ease-out; /* Add fadeInAndTranslateUp animation */
+  }
+  
+  .overlay-down-enter {
+    transform-origin: bottom;
+    animation: fadeInAndTranslateDown 0.3s ease-out; /* Add fadeInAndTranslateDown animation */
+  }
+  .overlay-left-exit{
+    transform-origin: left;
+    animation: fadeInAndTranslateLeft 0.3s reverse ease-out; /* Add fadeInAndTranslateLeft animation */
+  }
+  
+  .overlay-right-exit {
+    transform-origin: right;
+    animation: fadeInAndTranslateRight 0.3s reverse ease-out ; /* Add fadeInAndTranslateRight animation */
+  }
+  
+  .overlay-up-exit {
+    transform-origin: top;
+    animation: fadeInAndTranslateUp 0.3s reverse ease-out; /* Add fadeInAndTranslateUp animation */
+  }
+  
+  .overlay-down-exit {
+    transform-origin: bottom;
+    animation: fadeInAndTranslateDown 0.3s reverse ease-out; /* Add fadeInAndTranslateDown animation */
+  }
+  
+  @keyframes fadeInAndTranslateLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-100px); /* Start from a slightly left position */
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0); /* Move to the original position */
+    }
+  }
+  
+  @keyframes fadeInAndTranslateRight {
+    from {
+      opacity: 0;
+      transform: translateX(100px); /* Start from a slightly right position */
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0); /* Move to the original position */
+    }
+  }
+  
+  @keyframes fadeInAndTranslateUp {
+    from {
+      opacity: 0;
+      transform: translateY(-100px); /* Start from a slightly above position */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); /* Move to the original position */
+    }
+  }
+  
+  @keyframes fadeInAndTranslateDown {
+    from {
+      opacity: 0;
+      transform: translateY(100px); /* Start from a slightly below position */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); /* Move to the original position */
+    }
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(245, 202, 33,0.8);
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
